@@ -29,7 +29,7 @@ python3 torch_inst.py
 cd ..
 ```
 
-If successful, should see the script outputting a tensor result on all nodes at the end.
+If successful, should see the script outputting a tensor result on all nodes at the end. The above steps have already been completed on the current nodes.
 
 
 TODO
