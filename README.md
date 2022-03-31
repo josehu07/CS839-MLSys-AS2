@@ -13,9 +13,7 @@ Install `parallel-ssh` tool:
 pip3 install parallel-ssh
 ```
 
-CloudLab connection information is hardcoded in `pssh_common.py`.
-
-Setup passwordless sudoer `torchuser` on all nodes:
+CloudLab connection information is hardcoded in `pssh_common.py`. Setup passwordless sudoer `torchuser` on all nodes:
 
 ```bash
 cd setup
