@@ -1,17 +1,15 @@
 # CS839 MLSys Collective Communication Assignment
 
-CS839 MLSys @ UW-Madison, SP2022
-
-Assignment 2 on collective communication.
-
-
-## Machine Setup
+CS839 MLSys @ UW-Madison, SP2022. Assignment 2 on collective communication.
 
 Install `parallel-ssh` tool:
 
 ```bash
 pip3 install parallel-ssh
 ```
+
+
+## Machine Setup
 
 CloudLab connection information is hardcoded in `pssh_common.py`. Setup passwordless sudoer `torchuser` on all nodes:
 
@@ -29,5 +27,7 @@ cd ..
 
 If successful, should see the script outputting a tensor result on all nodes at the end. The above steps have already been completed on the current nodes.
 
+
+## TODO
 
 TODO
