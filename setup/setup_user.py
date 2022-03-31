@@ -24,7 +24,7 @@ def main():
         "sudo usermod -aG sudo torchuser",
         "sudo runuser -u torchuser mkdir /home/torchuser/.ssh"
     ]
-    run_commands(commands, True)
+    run_commands(commands, user='josehu')
 
     print("=== Copying SSH authorized_keys to torchuser...")
     copy_file('authorized_keys', 'authorized_keys')
@@ -35,7 +35,7 @@ def main():
         "sudo runuser -u torchuser chmod 644 /home/torchuser/.ssh/authorized_keys",
         "echo 'torchuser ALL=(ALL) NOPASSWD: ALL' | sudo tee -a /etc/sudoers.d/99-emulab"
     ]
-    run_commands(commands, True)
+    run_commands(commands, user='josehu')
 
 if __name__ == '__main__':
     main()

@@ -18,13 +18,12 @@ def main():
         "pip3 install numpy matplotlib",
         "pip3 install torch==1.4.0+cpu -f https://download.pytorch.org/whl/torch_stable.html"
     ]
-    # run_commands(commands, False)   # somehow False doesn't work
-    run_commands(commands, True)
+    run_commands(commands, print_stdout=True)   # somehow False doesn't work
 
     commands = [
         "python3 -c 'import torch; x = torch.rand(5, 3); print(x)'"
     ]
-    run_commands(commands, True)
+    run_commands(commands)
 
 if __name__ == '__main__':
     main()

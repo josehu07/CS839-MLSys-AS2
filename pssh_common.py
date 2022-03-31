@@ -27,31 +27,33 @@ HOSTS = [
 ]
 
 HOST_CONFIG = [
-    HostConfig(port=27610, user='josehu'),
-    HostConfig(port=27611, user='josehu'),
-    HostConfig(port=27612, user='josehu'),
-    HostConfig(port=27613, user='josehu'),
-    HostConfig(port=27610, user='josehu'),
-    HostConfig(port=27611, user='josehu'),
-    HostConfig(port=27612, user='josehu'),
-    HostConfig(port=27613, user='josehu'),
-    HostConfig(port=27610, user='josehu'),
-    HostConfig(port=27611, user='josehu'),
-    HostConfig(port=27612, user='josehu'),
-    HostConfig(port=27613, user='josehu'),
-    HostConfig(port=27610, user='josehu'),
-    HostConfig(port=27611, user='josehu'),
-    HostConfig(port=27612, user='josehu'),
-    HostConfig(port=27613, user='josehu')
+    HostConfig(port=27610, user='torchuser'),
+    HostConfig(port=27611, user='torchuser'),
+    HostConfig(port=27612, user='torchuser'),
+    HostConfig(port=27613, user='torchuser'),
+    HostConfig(port=27610, user='torchuser'),
+    HostConfig(port=27611, user='torchuser'),
+    HostConfig(port=27612, user='torchuser'),
+    HostConfig(port=27613, user='torchuser'),
+    HostConfig(port=27610, user='torchuser'),
+    HostConfig(port=27611, user='torchuser'),
+    HostConfig(port=27612, user='torchuser'),
+    HostConfig(port=27613, user='torchuser'),
+    HostConfig(port=27610, user='torchuser'),
+    HostConfig(port=27611, user='torchuser'),
+    HostConfig(port=27612, user='torchuser'),
+    HostConfig(port=27613, user='torchuser')
 ]
 
-CLIENT = ParallelSSHClient(HOSTS, host_config=HOST_CONFIG)
 
+def run_commands(commands, user='torchuser', print_stdout=True):
+    for hc in HOST_CONFIG:
+        hc.user = user
+    client = ParallelSSHClient(HOSTS, host_config=HOST_CONFIG)
 
-def run_commands(commands, print_stdout=False):
     for cmd in commands:
         print(f"=== Running {cmd} ...")
-        output = CLIENT.run_command(cmd)
+        output = client.run_command(cmd)
 
         idx = 0
         for host_output in output:
@@ -64,5 +66,9 @@ def run_commands(commands, print_stdout=False):
                     print(line)
             idx += 1
 
-def copy_file(src_path, dst_path):
-    CLIENT.copy_file(src_path, dst_path)
+def copy_file(src_path, dst_path, user='torchuser'):
+    for hc in HOST_CONFIG:
+        hc.user = user
+    client = ParallelSSHClient(HOSTS, host_config=HOST_CONFIG)
+
+    client.copy_file(src_path, dst_path)

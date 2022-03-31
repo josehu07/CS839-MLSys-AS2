@@ -14,7 +14,7 @@ def main():
     commands = [
         "python3 -c 'import torch; x = torch.rand(5, 3); print(x)'"
     ]
-    run_commands(commands, True)
+    run_commands(commands)
 
 if __name__ == '__main__':
     main()
