@@ -26,25 +26,26 @@ HOSTS = [
     'c220g5-111217.wisc.cloudlab.us'
 ]
 
-HOST_CONFIG = [
-    HostConfig(port=27610, user='torchuser'),
-    HostConfig(port=27611, user='torchuser'),
-    HostConfig(port=27612, user='torchuser'),
-    HostConfig(port=27613, user='torchuser'),
-    HostConfig(port=27610, user='torchuser'),
-    HostConfig(port=27611, user='torchuser'),
-    HostConfig(port=27612, user='torchuser'),
-    HostConfig(port=27613, user='torchuser'),
-    HostConfig(port=27610, user='torchuser'),
-    HostConfig(port=27611, user='torchuser'),
-    HostConfig(port=27612, user='torchuser'),
-    HostConfig(port=27613, user='torchuser'),
-    HostConfig(port=27610, user='torchuser'),
-    HostConfig(port=27611, user='torchuser'),
-    HostConfig(port=27612, user='torchuser'),
-    HostConfig(port=27613, user='torchuser')
+HOSTS_PORT = [
+    27610,
+    27611,
+    27612,
+    27613,
+    27610,
+    27611,
+    27612,
+    27613,
+    27610,
+    27611,
+    27612,
+    27613,
+    27610,
+    27611,
+    27612,
+    27613,
 ]
 
+HOST_CONFIG = [HostConfig(port=p, user='torchuser') for p in HOSTS_PORT]
 
 def run_commands(commands, user='torchuser', print_stdout=True):
     for hc in HOST_CONFIG:
@@ -65,6 +66,7 @@ def run_commands(commands, user='torchuser', print_stdout=True):
                 for line in host_output.stdout:
                     print(line)
             idx += 1
+
 
 def copy_file(src_path, dst_path, user='torchuser'):
     for hc in HOST_CONFIG:
