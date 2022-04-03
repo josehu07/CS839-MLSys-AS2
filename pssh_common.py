@@ -47,10 +47,16 @@ HOSTS_PORT = [
 
 HOST_CONFIG = [HostConfig(port=p, user='torchuser') for p in HOSTS_PORT]
 
-def run_commands(commands, user='torchuser', print_stdout=True):
+
+def get_pssh_client(user='torchuser', num_nodes: int = len(HOSTS)):
     for hc in HOST_CONFIG:
         hc.user = user
-    client = ParallelSSHClient(HOSTS, host_config=HOST_CONFIG)
+    client = ParallelSSHClient(HOSTS[:num_nodes], host_config=HOST_CONFIG)
+    return client
+
+
+def run_commands(commands, user='torchuser', print_stdout=True):
+    client = get_pssh_client(user)
 
     for cmd in commands:
         print(f"=== Running {cmd} ...")
