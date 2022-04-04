@@ -31,6 +31,8 @@ if __name__ == "__main__":
     parser.add_argument("--vec_size", required=True, type=str)
     parser.add_argument("--num_nodes", required=True, type=int)
     parser.add_argument("--print", required=False, action="store_true")
+    # tag the output line for easier parsing into csv
+    parser.add_argument("--tag", required=False, type=str)
     args = parser.parse_args()
     vec_size = get_tensor_size(args.vec_size)
 
@@ -50,6 +52,8 @@ if __name__ == "__main__":
     t1 = time.time()
 
     print(f"Rank {args.rank}: {t1 - t0:.3f} s")
+    # this line is for data collection (filter by prefix "[result]")
+    print(f"{args.tag}, {args.vec_size}, {args.num_nodes}, {args.alg}, {args.rank}, {t1 - t0:.3f}")
 
     if args.print:
         print(vec_reduced)
