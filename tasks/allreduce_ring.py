@@ -29,7 +29,7 @@ class AllReduceRing(AllReduce):
             send_slice_begin, send_slice_end = \
                 self.get_slice_idx(curr, curr + 1)
             req_send = dist.isend(
-                x[send_slice_begin, send_slice_end], rank_next)
+                x[send_slice_begin: send_slice_end], rank_next)
 
             curr = (curr - 1) % self.world_size
             recv_slice_begin, recv_slice_end = \
@@ -49,7 +49,7 @@ class AllReduceRing(AllReduce):
             send_slice_begin, send_slice_end = \
                 self.get_slice_idx(curr, curr + 1)
             req_send = dist.isend(
-                x[send_slice_begin, send_slice_end], rank_prev)
+                x[send_slice_begin: send_slice_end], rank_prev)
             curr = (curr + 1) % self.world_size
 
             recv_slice_begin, recv_slice_end = \
