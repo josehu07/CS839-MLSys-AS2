@@ -2,10 +2,10 @@
 
 CS839 MLSys @ UW-Madison, SP2022. Assignment 2 on collective communication.
 
-Install `parallel-ssh` tool:
+Install `parallel-ssh` tool and `matplotlib`:
 
 ```bash
-pip3 install parallel-ssh
+pip3 install parallel-ssh matplotlib
 ```
 
 
@@ -41,4 +41,4 @@ To run all 4 tasks, execute the command below at the root path of this repositor
 ./run.sh
 ```
 
-Check out the `task*.csv` files produced for results.
+Check out the `task*.csv` and `task*.png` files produced for results.
