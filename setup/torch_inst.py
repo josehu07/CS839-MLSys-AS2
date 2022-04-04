@@ -2,7 +2,6 @@
 # Install pytorch on all 16 nodes.
 #
 
-
 import sys
 import os
 
@@ -18,7 +17,7 @@ def main():
         "pip3 install numpy matplotlib",
         "pip3 install torch==1.4.0+cpu -f https://download.pytorch.org/whl/torch_stable.html"
     ]
-    run_commands(commands, print_stdout=True)   # somehow False doesn't work
+    run_commands(commands)
 
     commands = [
         "python3 -c 'import torch; x = torch.rand(5, 3); print(x)'"

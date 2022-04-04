@@ -1,3 +1,7 @@
+#
+# AllReduce: recursive halving & doubling implementation.
+#
+
 from allreduce import *
 
 
