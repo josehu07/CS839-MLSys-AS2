@@ -1,9 +1,8 @@
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from pssh_common import HOSTS, HOSTS_PORT, get_pssh_client
-
 import gevent
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from pssh_common import get_pssh_client
 
 """
 Run this command in the top-level directory, i.e. python tasks/task3.py
@@ -14,10 +13,14 @@ if __name__ == "__main__":
     gevent.joinall(copy_greenlets, raise_error=True)
 
     for num_nodes in [2, 4, 8, 16]:
+        client = get_pssh_client(num_nodes=num_nodes)
         for alg in ["ring", "recur_hd"]:
             print(f"--- sz=10MB, num_nodes={num_nodes}, alg={alg} ---")
             output = client.run_command(
-                f"python3 tasks/task_driver.py --alg={alg} --master_ip=10.10.1.1 --rank=%d --vec_size=10MB --num_nodes={num_nodes}", host_args=tuple(r for r in range(num_nodes)))
+                "python3 tasks/task_driver.py --master_ip=10.10.1.1 "
+                f"--alg={alg} --rank=%d --vec_size=10MB "
+                f"--num_nodes={num_nodes} --tag=task3",
+                host_args=tuple(r for r in range(num_nodes)))
 
             idx = 0
             for host_output in output:
