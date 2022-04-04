@@ -2,10 +2,10 @@
 
 CS839 MLSys @ UW-Madison, SP2022. Assignment 2 on collective communication.
 
-Install `parallel-ssh` tool and `matplotlib`:
+Install `parallel-ssh` tool, `matplotlib`, and `sklearn`:
 
 ```bash
-pip3 install parallel-ssh matplotlib
+pip3 install parallel-ssh matplotlib sklearn
 ```
 
 
