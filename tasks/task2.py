@@ -17,7 +17,7 @@ if __name__ == "__main__":
         for alg in ["ring", "recur_hd"]:
             print(f"--- sz={sz}, num_nodes=16, alg={alg} ---")
             output = client.run_command(
-                f"python3 tasks/task_driver.py --alg={alg} --master_ip=10.10.1.1 --rank=%d --vec_size={sz} --num_nodes=16 --print", host_args=tuple(r for r in range(16)))
+                f"python3 tasks/task_driver.py --alg={alg} --master_ip=10.10.1.1 --rank=%d --vec_size={sz} --num_nodes=16", host_args=tuple(r for r in range(16)))
 
             idx = 0
             for host_output in output:

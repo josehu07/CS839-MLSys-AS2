@@ -12,11 +12,11 @@ def get_tensor_size(size_str: str):
     # it can directly accept the length of the vector e.g. 16
     # it can also accept size specified by B/KB/MB
     if size_str.endswith("MB"):
-        return int(size_str[:-2]) * 1024 * 1024 / 4
+        return int(size_str[:-2]) * 1024 * 1024 // 4
     if size_str.endswith("KB"):
-        return int(size_str[:-2]) * 1024 / 4
+        return int(size_str[:-2]) * 1024 // 4
     if size_str.endswith("B"):
-        return int(size_str[:-1]) / 4
+        return int(size_str[:-1]) // 4
     return int(size_str)
 
 
