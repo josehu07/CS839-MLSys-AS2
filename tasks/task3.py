@@ -16,11 +16,10 @@ if __name__ == "__main__":
     copy_file(".", ".", recurse=True)
 
     for num_nodes in [2, 4, 8, 16]:
-        client = get_pssh_client(num_nodes=num_nodes)
         for alg in ["ring", "recur_hd"]:
             commands = [
                 f"python3 tasks/task_driver.py --alg={alg} --master_ip=10.10.1.1 "
-                f"--rank=%d --vec_size=10MB --num_nodes={num_nodes}"
+                f"--rank=%d --vec_size=10MB --num_nodes={num_nodes} --tag=task3-tag"
             ]
             host_args_list = [
                 tuple(r for r in range(num_nodes))

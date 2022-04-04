@@ -19,7 +19,7 @@ if __name__ == "__main__":
         commands = [
             "python3 tasks/task_driver.py --master_ip=10.10.1.1 "
             f"--alg={alg} --rank=%d --vec_size=16 "
-            f"--num_nodes=16 --print --tag=task1"
+            f"--num_nodes=16 --print --tag=task1-tag"
         ]
         host_args_list = [
             tuple(r for r in range(16))

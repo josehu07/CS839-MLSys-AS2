@@ -1,0 +1,194 @@
+=== Running python3 tasks/task_driver.py --master_ip=10.10.1.1 --alg=ring --rank=%d --vec_size=16 --num_nodes=16 --print --tag=task1-tag ...
+>>> Host 0 result:
+Rank 0: Use Ring AllReduce algorithm.
+Rank 0: 0.186 s
+task1-tag, 16, 16, ring, 0, 0.186
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 1 result:
+Rank 1: Use Ring AllReduce algorithm.
+Rank 1: 0.160 s
+task1-tag, 16, 16, ring, 1, 0.160
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 2 result:
+Rank 2: Use Ring AllReduce algorithm.
+Rank 2: 0.154 s
+task1-tag, 16, 16, ring, 2, 0.154
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 3 result:
+Rank 3: Use Ring AllReduce algorithm.
+Rank 3: 0.139 s
+task1-tag, 16, 16, ring, 3, 0.139
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 4 result:
+Rank 4: Use Ring AllReduce algorithm.
+Rank 4: 0.131 s
+task1-tag, 16, 16, ring, 4, 0.131
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 5 result:
+Rank 5: Use Ring AllReduce algorithm.
+Rank 5: 0.126 s
+task1-tag, 16, 16, ring, 5, 0.126
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 6 result:
+Rank 6: Use Ring AllReduce algorithm.
+Rank 6: 0.117 s
+task1-tag, 16, 16, ring, 6, 0.117
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 7 result:
+Rank 7: Use Ring AllReduce algorithm.
+Rank 7: 0.108 s
+task1-tag, 16, 16, ring, 7, 0.108
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 8 result:
+Rank 8: Use Ring AllReduce algorithm.
+Rank 8: 0.099 s
+task1-tag, 16, 16, ring, 8, 0.099
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 9 result:
+Rank 9: Use Ring AllReduce algorithm.
+Rank 9: 0.090 s
+task1-tag, 16, 16, ring, 9, 0.090
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 10 result:
+Rank 10: Use Ring AllReduce algorithm.
+Rank 10: 0.083 s
+task1-tag, 16, 16, ring, 10, 0.083
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 11 result:
+Rank 11: Use Ring AllReduce algorithm.
+Rank 11: 0.073 s
+task1-tag, 16, 16, ring, 11, 0.073
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 12 result:
+Rank 12: Use Ring AllReduce algorithm.
+Rank 12: 0.065 s
+task1-tag, 16, 16, ring, 12, 0.065
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 13 result:
+Rank 13: Use Ring AllReduce algorithm.
+Rank 13: 0.054 s
+task1-tag, 16, 16, ring, 13, 0.054
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 14 result:
+Rank 14: Use Ring AllReduce algorithm.
+Rank 14: 0.044 s
+task1-tag, 16, 16, ring, 14, 0.044
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+>>> Host 15 result:
+Rank 15: Use Ring AllReduce algorithm.
+Rank 15: 0.045 s
+task1-tag, 16, 16, ring, 15, 0.045
+tensor([0.8964, 0.5036, 0.0848, 0.1616, 0.5958, 0.0502, 0.3595, 0.1772, 0.9543,
+        0.6627, 0.5579, 0.8228, 0.7959, 0.4577, 0.7942, 0.3871])
+=== Running python3 tasks/task_driver.py --master_ip=10.10.1.1 --alg=recur_hd --rank=%d --vec_size=16 --num_nodes=16 --print --tag=task1-tag ...
+>>> Host 0 result:
+Rank 0: Use Recursive Halving and Doubling algorithm.
+Rank 0: 0.152 s
+task1-tag, 16, 16, recur_hd, 0, 0.152
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 1 result:
+Rank 1: Use Recursive Halving and Doubling algorithm.
+Rank 1: 0.123 s
+task1-tag, 16, 16, recur_hd, 1, 0.123
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 2 result:
+Rank 2: Use Recursive Halving and Doubling algorithm.
+Rank 2: 0.116 s
+task1-tag, 16, 16, recur_hd, 2, 0.116
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 3 result:
+Rank 3: Use Recursive Halving and Doubling algorithm.
+Rank 3: 0.113 s
+task1-tag, 16, 16, recur_hd, 3, 0.113
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 4 result:
+Rank 4: Use Recursive Halving and Doubling algorithm.
+Rank 4: 0.105 s
+task1-tag, 16, 16, recur_hd, 4, 0.105
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 5 result:
+Rank 5: Use Recursive Halving and Doubling algorithm.
+Rank 5: 0.100 s
+task1-tag, 16, 16, recur_hd, 5, 0.100
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 6 result:
+Rank 6: Use Recursive Halving and Doubling algorithm.
+Rank 6: 0.094 s
+task1-tag, 16, 16, recur_hd, 6, 0.094
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 7 result:
+Rank 7: Use Recursive Halving and Doubling algorithm.
+Rank 7: 0.082 s
+task1-tag, 16, 16, recur_hd, 7, 0.082
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 8 result:
+Rank 8: Use Recursive Halving and Doubling algorithm.
+Rank 8: 0.073 s
+task1-tag, 16, 16, recur_hd, 8, 0.073
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 9 result:
+Rank 9: Use Recursive Halving and Doubling algorithm.
+Rank 9: 0.068 s
+task1-tag, 16, 16, recur_hd, 9, 0.068
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 10 result:
+Rank 10: Use Recursive Halving and Doubling algorithm.
+Rank 10: 0.058 s
+task1-tag, 16, 16, recur_hd, 10, 0.058
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 11 result:
+Rank 11: Use Recursive Halving and Doubling algorithm.
+Rank 11: 0.050 s
+task1-tag, 16, 16, recur_hd, 11, 0.050
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 12 result:
+Rank 12: Use Recursive Halving and Doubling algorithm.
+Rank 12: 0.040 s
+task1-tag, 16, 16, recur_hd, 12, 0.040
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 13 result:
+Rank 13: Use Recursive Halving and Doubling algorithm.
+Rank 13: 0.028 s
+task1-tag, 16, 16, recur_hd, 13, 0.028
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 14 result:
+Rank 14: Use Recursive Halving and Doubling algorithm.
+Rank 14: 0.018 s
+task1-tag, 16, 16, recur_hd, 14, 0.018
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])
+>>> Host 15 result:
+Rank 15: Use Recursive Halving and Doubling algorithm.
+Rank 15: 0.018 s
+task1-tag, 16, 16, recur_hd, 15, 0.018
+tensor([ 9.9676,  9.9875,  7.5476,  9.5167,  7.0800,  8.7409,  9.0758,  8.5157,
+         7.4698,  7.3156,  8.7969,  8.2043, 10.0936,  8.3996,  7.5769,  8.6984])

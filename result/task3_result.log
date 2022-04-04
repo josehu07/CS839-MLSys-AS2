@@ -1,0 +1,256 @@
+--- sz=10MB, num_nodes=2, alg=ring ---
+=== Running python3 tasks/task_driver.py --alg=ring --master_ip=10.10.1.1 --rank=%d --vec_size=10MB --num_nodes=2 --tag=task3-tag ...
+>>> Host 0 result:
+Rank 0: Use Ring AllReduce algorithm.
+Rank 0: 0.073 s
+task3-tag, 10MB, 2, ring, 0, 0.073
+>>> Host 1 result:
+Rank 1: Use Ring AllReduce algorithm.
+Rank 1: 0.074 s
+task3-tag, 10MB, 2, ring, 1, 0.074
+--- sz=10MB, num_nodes=2, alg=recur_hd ---
+=== Running python3 tasks/task_driver.py --alg=recur_hd --master_ip=10.10.1.1 --rank=%d --vec_size=10MB --num_nodes=2 --tag=task3-tag ...
+>>> Host 0 result:
+Rank 0: Use Recursive Halving and Doubling algorithm.
+Rank 0: 0.075 s
+task3-tag, 10MB, 2, recur_hd, 0, 0.075
+>>> Host 1 result:
+Rank 1: Use Recursive Halving and Doubling algorithm.
+Rank 1: 0.078 s
+task3-tag, 10MB, 2, recur_hd, 1, 0.078
+--- sz=10MB, num_nodes=4, alg=ring ---
+=== Running python3 tasks/task_driver.py --alg=ring --master_ip=10.10.1.1 --rank=%d --vec_size=10MB --num_nodes=4 --tag=task3-tag ...
+>>> Host 0 result:
+Rank 0: Use Ring AllReduce algorithm.
+Rank 0: 0.116 s
+task3-tag, 10MB, 4, ring, 0, 0.116
+>>> Host 1 result:
+Rank 1: Use Ring AllReduce algorithm.
+Rank 1: 0.100 s
+task3-tag, 10MB, 4, ring, 1, 0.100
+>>> Host 2 result:
+Rank 2: Use Ring AllReduce algorithm.
+Rank 2: 0.095 s
+task3-tag, 10MB, 4, ring, 2, 0.095
+>>> Host 3 result:
+Rank 3: Use Ring AllReduce algorithm.
+Rank 3: 0.095 s
+task3-tag, 10MB, 4, ring, 3, 0.095
+--- sz=10MB, num_nodes=4, alg=recur_hd ---
+=== Running python3 tasks/task_driver.py --alg=recur_hd --master_ip=10.10.1.1 --rank=%d --vec_size=10MB --num_nodes=4 --tag=task3-tag ...
+>>> Host 0 result:
+Rank 0: Use Recursive Halving and Doubling algorithm.
+Rank 0: 0.200 s
+task3-tag, 10MB, 4, recur_hd, 0, 0.200
+>>> Host 1 result:
+Rank 1: Use Recursive Halving and Doubling algorithm.
+Rank 1: 0.188 s
+task3-tag, 10MB, 4, recur_hd, 1, 0.188
+>>> Host 2 result:
+Rank 2: Use Recursive Halving and Doubling algorithm.
+Rank 2: 0.181 s
+task3-tag, 10MB, 4, recur_hd, 2, 0.181
+>>> Host 3 result:
+Rank 3: Use Recursive Halving and Doubling algorithm.
+Rank 3: 0.169 s
+task3-tag, 10MB, 4, recur_hd, 3, 0.169
+--- sz=10MB, num_nodes=8, alg=ring ---
+=== Running python3 tasks/task_driver.py --alg=ring --master_ip=10.10.1.1 --rank=%d --vec_size=10MB --num_nodes=8 --tag=task3-tag ...
+>>> Host 0 result:
+Rank 0: Use Ring AllReduce algorithm.
+Rank 0: 0.329 s
+task3-tag, 10MB, 8, ring, 0, 0.329
+>>> Host 1 result:
+Rank 1: Use Ring AllReduce algorithm.
+Rank 1: 0.323 s
+task3-tag, 10MB, 8, ring, 1, 0.323
+>>> Host 2 result:
+Rank 2: Use Ring AllReduce algorithm.
+Rank 2: 0.308 s
+task3-tag, 10MB, 8, ring, 2, 0.308
+>>> Host 3 result:
+Rank 3: Use Ring AllReduce algorithm.
+Rank 3: 0.265 s
+task3-tag, 10MB, 8, ring, 3, 0.265
+>>> Host 4 result:
+Rank 4: Use Ring AllReduce algorithm.
+Rank 4: 0.271 s
+task3-tag, 10MB, 8, ring, 4, 0.271
+>>> Host 5 result:
+Rank 5: Use Ring AllReduce algorithm.
+Rank 5: 0.262 s
+task3-tag, 10MB, 8, ring, 5, 0.262
+>>> Host 6 result:
+Rank 6: Use Ring AllReduce algorithm.
+Rank 6: 0.274 s
+task3-tag, 10MB, 8, ring, 6, 0.274
+>>> Host 7 result:
+Rank 7: Use Ring AllReduce algorithm.
+Rank 7: 0.286 s
+task3-tag, 10MB, 8, ring, 7, 0.286
+--- sz=10MB, num_nodes=8, alg=recur_hd ---
+=== Running python3 tasks/task_driver.py --alg=recur_hd --master_ip=10.10.1.1 --rank=%d --vec_size=10MB --num_nodes=8 --tag=task3-tag ...
+>>> Host 0 result:
+Rank 0: Use Recursive Halving and Doubling algorithm.
+Rank 0: 0.816 s
+task3-tag, 10MB, 8, recur_hd, 0, 0.816
+>>> Host 1 result:
+Rank 1: Use Recursive Halving and Doubling algorithm.
+Rank 1: 0.775 s
+task3-tag, 10MB, 8, recur_hd, 1, 0.775
+>>> Host 2 result:
+Rank 2: Use Recursive Halving and Doubling algorithm.
+Rank 2: 0.753 s
+task3-tag, 10MB, 8, recur_hd, 2, 0.753
+>>> Host 3 result:
+Rank 3: Use Recursive Halving and Doubling algorithm.
+Rank 3: 0.775 s
+task3-tag, 10MB, 8, recur_hd, 3, 0.775
+>>> Host 4 result:
+Rank 4: Use Recursive Halving and Doubling algorithm.
+Rank 4: 0.814 s
+task3-tag, 10MB, 8, recur_hd, 4, 0.814
+>>> Host 5 result:
+Rank 5: Use Recursive Halving and Doubling algorithm.
+Rank 5: 0.811 s
+task3-tag, 10MB, 8, recur_hd, 5, 0.811
+>>> Host 6 result:
+Rank 6: Use Recursive Halving and Doubling algorithm.
+Rank 6: 0.780 s
+task3-tag, 10MB, 8, recur_hd, 6, 0.780
+>>> Host 7 result:
+Rank 7: Use Recursive Halving and Doubling algorithm.
+Rank 7: 0.789 s
+task3-tag, 10MB, 8, recur_hd, 7, 0.789
+--- sz=10MB, num_nodes=16, alg=ring ---
+=== Running python3 tasks/task_driver.py --alg=ring --master_ip=10.10.1.1 --rank=%d --vec_size=10MB --num_nodes=16 --tag=task3-tag ...
+>>> Host 0 result:
+Rank 0: Use Ring AllReduce algorithm.
+Rank 0: 0.498 s
+task3-tag, 10MB, 16, ring, 0, 0.498
+>>> Host 1 result:
+Rank 1: Use Ring AllReduce algorithm.
+Rank 1: 0.454 s
+task3-tag, 10MB, 16, ring, 1, 0.454
+>>> Host 2 result:
+Rank 2: Use Ring AllReduce algorithm.
+Rank 2: 0.432 s
+task3-tag, 10MB, 16, ring, 2, 0.432
+>>> Host 3 result:
+Rank 3: Use Ring AllReduce algorithm.
+Rank 3: 0.426 s
+task3-tag, 10MB, 16, ring, 3, 0.426
+>>> Host 4 result:
+Rank 4: Use Ring AllReduce algorithm.
+Rank 4: 0.425 s
+task3-tag, 10MB, 16, ring, 4, 0.425
+>>> Host 5 result:
+Rank 5: Use Ring AllReduce algorithm.
+Rank 5: 0.403 s
+task3-tag, 10MB, 16, ring, 5, 0.403
+>>> Host 6 result:
+Rank 6: Use Ring AllReduce algorithm.
+Rank 6: 0.397 s
+task3-tag, 10MB, 16, ring, 6, 0.397
+>>> Host 7 result:
+Rank 7: Use Ring AllReduce algorithm.
+Rank 7: 0.403 s
+task3-tag, 10MB, 16, ring, 7, 0.403
+>>> Host 8 result:
+Rank 8: Use Ring AllReduce algorithm.
+Rank 8: 0.397 s
+task3-tag, 10MB, 16, ring, 8, 0.397
+>>> Host 9 result:
+Rank 9: Use Ring AllReduce algorithm.
+Rank 9: 0.373 s
+task3-tag, 10MB, 16, ring, 9, 0.373
+>>> Host 10 result:
+Rank 10: Use Ring AllReduce algorithm.
+Rank 10: 0.361 s
+task3-tag, 10MB, 16, ring, 10, 0.361
+>>> Host 11 result:
+Rank 11: Use Ring AllReduce algorithm.
+Rank 11: 0.346 s
+task3-tag, 10MB, 16, ring, 11, 0.346
+>>> Host 12 result:
+Rank 12: Use Ring AllReduce algorithm.
+Rank 12: 0.358 s
+task3-tag, 10MB, 16, ring, 12, 0.358
+>>> Host 13 result:
+Rank 13: Use Ring AllReduce algorithm.
+Rank 13: 0.345 s
+task3-tag, 10MB, 16, ring, 13, 0.345
+>>> Host 14 result:
+Rank 14: Use Ring AllReduce algorithm.
+Rank 14: 0.347 s
+task3-tag, 10MB, 16, ring, 14, 0.347
+>>> Host 15 result:
+Rank 15: Use Ring AllReduce algorithm.
+Rank 15: 0.338 s
+task3-tag, 10MB, 16, ring, 15, 0.338
+--- sz=10MB, num_nodes=16, alg=recur_hd ---
+=== Running python3 tasks/task_driver.py --alg=recur_hd --master_ip=10.10.1.1 --rank=%d --vec_size=10MB --num_nodes=16 --tag=task3-tag ...
+>>> Host 0 result:
+Rank 0: Use Recursive Halving and Doubling algorithm.
+Rank 0: 1.066 s
+task3-tag, 10MB, 16, recur_hd, 0, 1.066
+>>> Host 1 result:
+Rank 1: Use Recursive Halving and Doubling algorithm.
+Rank 1: 1.087 s
+task3-tag, 10MB, 16, recur_hd, 1, 1.087
+>>> Host 2 result:
+Rank 2: Use Recursive Halving and Doubling algorithm.
+Rank 2: 1.092 s
+task3-tag, 10MB, 16, recur_hd, 2, 1.092
+>>> Host 3 result:
+Rank 3: Use Recursive Halving and Doubling algorithm.
+Rank 3: 1.113 s
+task3-tag, 10MB, 16, recur_hd, 3, 1.113
+>>> Host 4 result:
+Rank 4: Use Recursive Halving and Doubling algorithm.
+Rank 4: 0.953 s
+task3-tag, 10MB, 16, recur_hd, 4, 0.953
+>>> Host 5 result:
+Rank 5: Use Recursive Halving and Doubling algorithm.
+Rank 5: 0.943 s
+task3-tag, 10MB, 16, recur_hd, 5, 0.943
+>>> Host 6 result:
+Rank 6: Use Recursive Halving and Doubling algorithm.
+Rank 6: 1.026 s
+task3-tag, 10MB, 16, recur_hd, 6, 1.026
+>>> Host 7 result:
+Rank 7: Use Recursive Halving and Doubling algorithm.
+Rank 7: 1.032 s
+task3-tag, 10MB, 16, recur_hd, 7, 1.032
+>>> Host 8 result:
+Rank 8: Use Recursive Halving and Doubling algorithm.
+Rank 8: 1.027 s
+task3-tag, 10MB, 16, recur_hd, 8, 1.027
+>>> Host 9 result:
+Rank 9: Use Recursive Halving and Doubling algorithm.
+Rank 9: 1.080 s
+task3-tag, 10MB, 16, recur_hd, 9, 1.080
+>>> Host 10 result:
+Rank 10: Use Recursive Halving and Doubling algorithm.
+Rank 10: 1.062 s
+task3-tag, 10MB, 16, recur_hd, 10, 1.062
+>>> Host 11 result:
+Rank 11: Use Recursive Halving and Doubling algorithm.
+Rank 11: 1.070 s
+task3-tag, 10MB, 16, recur_hd, 11, 1.070
+>>> Host 12 result:
+Rank 12: Use Recursive Halving and Doubling algorithm.
+Rank 12: 0.867 s
+task3-tag, 10MB, 16, recur_hd, 12, 0.867
+>>> Host 13 result:
+Rank 13: Use Recursive Halving and Doubling algorithm.
+Rank 13: 0.896 s
+task3-tag, 10MB, 16, recur_hd, 13, 0.896
+>>> Host 14 result:
+Rank 14: Use Recursive Halving and Doubling algorithm.
+Rank 14: 0.924 s
+task3-tag, 10MB, 16, recur_hd, 14, 0.924
+>>> Host 15 result:
+Rank 15: Use Recursive Halving and Doubling algorithm.
+Rank 15: 0.926 s
+task3-tag, 10MB, 16, recur_hd, 15, 0.926

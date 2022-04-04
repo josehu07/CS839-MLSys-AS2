@@ -19,7 +19,7 @@ if __name__ == "__main__":
         for alg in ["ring", "recur_hd"]:
             commands = [
                 f"python3 tasks/task_driver.py --alg={alg} --master_ip=10.10.1.1 "
-                f"--rank=%d --vec_size={sz} --num_nodes=16"
+                f"--rank=%d --vec_size={sz} --num_nodes=16 --tag=task2-tag"
             ]
             host_args_list = [
                 tuple(r for r in range(16))
