@@ -2,7 +2,6 @@
 # Setup the passwordless sudoer user 'torchuser' on all 16 nodes.
 #
 
-
 import sys
 import os
 

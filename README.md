@@ -28,6 +28,17 @@ cd ..
 If successful, should see the script outputting a tensor result on all nodes at the end. The above steps have already been completed on the current nodes.
 
 
-## TODO
+## Running Tasks
+
+To run task 1 to 4, execute the command below at the root path of this repository:
+
+```bash
+python3 tasks/task<x>.py    # replace <x> with 1~4
+```
+
+The core source code for the two AllReduce algorithms are at:
+
+* `tasks/allreduce_ring.py`: "Ring" algorithm
+* `tasks/allreduce_recur_hd.py`: Recursive Halving and Doubling algorithm
 
 TODO

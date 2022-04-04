@@ -1,3 +1,7 @@
+#
+# AllReduce algorithm parent class.
+#
+
 import torch
 from torch import distributed as dist
 

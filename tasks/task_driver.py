@@ -1,6 +1,8 @@
+#
+# Driver script to be distributed and run on each node.
+#
+
 import argparse
-import sys
-import os
 import time
 import torch
 from allreduce_recur_hd import AllReduceRecurHD

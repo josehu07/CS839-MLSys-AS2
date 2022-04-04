@@ -1,3 +1,7 @@
+#
+# AllReduce: ring implementation.
+#
+
 from allreduce import *
 
 
